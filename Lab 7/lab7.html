@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Image Puzzle | Lab 7</title>
+    <style>
+        h1 {
+            font-family: 'Futura', sans-serif;
+        }
+
+        .images {
+            width: 200px;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);
+        }
+
+        #main {
+            width: 600px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+
+        #pictures {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        #one {
+            position: relative;
+            top: 10px;
+            left: 20px;
+        }
+
+        #nine {
+            position: relative;
+            bottom: 30px;
+            right: 10px
+        }
+
+        #three {
+            position: absolute;
+            bottom: 15px;
+            left: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="main">
+    <h1>
+        Toy Poodle
+    </h1>
+
+<div id="pictures">
+    <div id="first-row">
+    <img id= "one" class="images" src="https://webvision.med.utah.edu/wp-content/uploads/2012/06/50-percent-gray.jpg" alt="topright">
+    <img class="images" src="https://webvision.med.utah.edu/wp-content/uploads/2012/06/50-percent-gray.jpg" alt="topright">
+    <img id="three" class="images" src="https://webvision.med.utah.edu/wp-content/uploads/2012/06/50-percent-gray.jpg" alt="topright">
+    </div>
+    
+    <div id="second-row">
+    <img class="images" src="https://webvision.med.utah.edu/wp-content/uploads/2012/06/50-percent-gray.jpg" alt="topright">
+    <img class="images" src="https://webvision.med.utah.edu/wp-content/uploads/2012/06/50-percent-gray.jpg" alt="topright">
+    <img class="images" src="https://webvision.med.utah.edu/wp-content/uploads/2012/06/50-percent-gray.jpg" alt="topright">
+    </div>
+    
+    <div id="third-row">
+    <img class="images" src="https://webvision.med.utah.edu/wp-content/uploads/2012/06/50-percent-gray.jpg" alt="topright">
+    <img class="images" src="https://webvision.med.utah.edu/wp-content/uploads/2012/06/50-percent-gray.jpg" alt="topright">
+    <img id="nine" class="images" src="https://webvision.med.utah.edu/wp-content/uploads/2012/06/50-percent-gray.jpg" alt="topright">
+    </div>
+</div>
+</div>
+</body>
+
+</html>
