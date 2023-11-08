@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>
+    Lab 10 | CSS Effects
+   </title>
+   <style>
+  body {
+    background-color: black;
+    position: absolute;
+    display: flex;
+    left: 50%;
+    top: 20%
+}
+
+.photo-gallery img {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    transition: 1s;
+}
+.photo-gallery  .second {
+    transform: translateX(-50px);
+}
+.photo-gallery .third {
+    transform: translateX(-100px);
+}
+
+.photo-gallery:hover .first {
+    transform: translateX(300px);
+}
+.photo-gallery:hover .second {
+    transform: translateX(0);
+}
+.photo-gallery:hover .third {
+    transform: translateX(-300px);
+}
+
+   </style>
+</head>
+
+<body>
+    <div class="photo-gallery">
+        <img class="first" src="img/Erving.jpeg" alt="Image 1">
+        <img class="second" src="img/trae.jpeg" alt="Image 2">
+        <img class="third" src="img/zion.jpeg" alt="Image 3">
+    </div>
+</body>
+
+</html>
