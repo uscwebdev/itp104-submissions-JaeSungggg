@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Jae Park's portfolio showcasing UX design, web development, and a passion for art. Sophomore at USC, majoring in Cognitive Science.">
+
+    <title>The Gallery | Jae Park</title>
+    <style>
+       @font-face {
+            src: url('fonts/AT\ Arges\ Black\ Condensed.otf');
+            font-family: "Arges";
+        }
+
+        @font-face {
+            src: url('fonts/PPMori-Regular.otf');
+            font-family: "PPMori";
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: azure;
+        }
+
+        .first-name {
+            font-family: 'Arges';
+            font-size: 700px;
+            margin-bottom: 0px;
+            color: rgb(57, 57, 68);
+            position: absolute;
+            top: 20px;
+            left: 60px;
+        }
+
+        .last-name {
+            font-family: 'Arges';
+            font-size: 700px;
+            margin-top: 200px;
+            margin-bottom: 0px;
+            color: rgb(57, 57, 68);
+            position: absolute;
+            left: 60px;
+        }
+
+        header {
+            height: 100px;
+            text-align: center;
+            margin: 0px;
+            height: 100px;
+            text-align: center;
+            margin: 0px;
+            position: relative;
+        }
+
+        .logo {
+            width: 90px;
+            position: absolute;
+            left: 30px;
+            top: 70%;
+            transform: translateY(-50%);
+        }
+
+        .dropdown {
+            width: 60px;
+            position: absolute;
+            right: 30px;
+            top: 70%;
+            transform: translateY(-50%);
+        }
+
+        #about-me {
+            font-family: 'PPMori';
+            color: rgb(57, 57, 68);
+            font-size: 25px;
+            letter-spacing: -1px;
+        }
+
+        p {
+            margin: 0px;
+        }
+
+        #layout {
+            display: flex;
+            justify-content: space-between; /* Adjust this property to control the space between name and about-me */
+            align-items: center; /* Vertically center the items */
+            padding-right: 100px; /* Add padding for better spacing */
+        }
+
+        .img-area {
+            position: relative;
+            height: 300px;
+            width: 400px;
+            position: absolute;
+            top: 960px;
+
+        }
+        
+        .img-box {
+            z-index: 200;
+            width: 200px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: .5s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            border-radius: 12px;
+        }
+
+        .img-area:hover .box-1 {
+            top: 0;
+            left: 0;
+            width: 250px;
+        }
+
+        .img-area:hover .box-2 {
+            top: 0;
+            left: 250px;
+            width: 200px;
+        }
+
+        .img-area:hover .box-3 {
+            top: 45px;
+            left: -190px;
+            width: 200px;
+        }
+        
+        .img-area img:nth-child(2) {
+            transform: rotate(5deg);
+            zoom: 1;
+        }
+
+        .img-area img:nth-child(3) {
+            transform: rotate(-15deg);
+        }
+
+        .arrow {
+            width: 200px;
+            position: absolute;
+            right: 300px
+        }
+
+        #dropdown {
+            border: none;
+            background-color: azure;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <img class="logo" src="img/logo.svg" alt="logo">
+    <button id="dropdown" onclick="window.location.href='menu.html'" class="dropdown">
+        <img src="img/dropdown.svg" alt="dropdown">
+    </button>
+</header>
+
+<div id="layout">
+    <div id="name">
+        <p class="first-name">JAE S.</p>
+        <p class="last-name">PARK</p>
+    </div>
+
+    <div id="about-me">
+        <p>HELLO! I AM A SOPHOMORE</p>
+        <p>AT THE UNIVERSITY OF SOUTHERN</p>
+        <p>CALIFORNIA</p>
+        <br>
+        <br>
+        <br>
+        <p>I AM MAJORING IN COGNITIVE</p>
+        <p>SCIENCE W/ A MINOR IN</p>
+        <p>USER EXPERIENCE DESIGN &</p>
+        <p>WEB DEVELOPMENT</p>
+        <br>
+        <br>
+        <br>
+        <p>I HAVE DABBLED IN ART, DESIGN,</p>
+        <p>AND ARCHITECTURE FOR 15 YEARS</p>
+        <p>AND AM NOW PURSUING UX DESIGN</p>
+        <p>AS A CAREER</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>WELCOME TO MY PORTFOLIO</p>
+        <img class="arrow" src="img/arrow.svg" alt="arrow">
+
+        <div class="img-area">
+            <img src="img/jason.JPG" alt="jason1" class="img-box box-1">
+            <img src="img/jason2.JPG" alt="jason1" class="img-box box-2">
+            <img src="img/jason3.JPG" alt="jason1" class="img-box box-3">
+        </div>
+        
+    </div>
+</div>
+
+</body>
+</html>
