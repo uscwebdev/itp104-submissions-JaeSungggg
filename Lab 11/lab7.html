@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Image Puzzle | Lab 7</title>
+    <style>
+        h1 {
+            font-family: 'Futura', sans-serif;
+        }
+
+        .images {
+            width: 200px;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);
+        }
+
+        #main {
+            width: 600px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            position: absolute
+        }
+
+        #pictures {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        #one {
+            position: relative;
+            top: 10px;
+            left: 20px;
+        }
+
+        #nine {
+            position: relative;
+            bottom: 20px;
+            right: 10px
+        }
+
+        #three {
+            position: relative;
+            top: 20px;
+            left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="main">
+    <h1>
+        Toy Poodle
+    </h1>
+
+<div id="pictures">
+    <div id="first-row">
+    <img id= "one" class="images" src="img/row1column1.jpg" alt="topright">
+    <img id="three" class="images" src="img/row2column1.jpg" alt="topright">
+    </div>
+    
+    <div id="second-row">
+    <img class="images" src="img/row1column2.jpg" alt="topright">
+    <img class="images" src="img/row2column2.jpg" alt="topright">
+    </div>
+    
+    <div id="third-row">
+    <img class="images" src="img/row1column3.jpg" alt="topright">
+    <img id="nine" class="images" src="img/row2column3.jpg" alt="topright">
+    </div>
+</div>
+</div>
+
+<script src="drag/draggabilly.pkgd.min.js"></script>
+
+<script>
+    var draggableElems = document.querySelectorAll('.images');
+// array of Draggabillies
+var draggies = []
+// init Draggabillies
+for ( var i=0; i < draggableElems.length; i++ ) {
+  var draggableElem = draggableElems[i];
+  var draggie = new Draggabilly( draggableElem, {
+    // options...
+  });
+  draggies.push( draggie );
+}
+</script>
+
+
+</body>
+
+</html>
