@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Jae Park's portfolio showcasing UX design, web development, and a passion for art. Sophomore at USC, majoring in Cognitive Science.">
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <title>The Gallery | Jae Park</title>
+    
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(245.59deg, #0b0c31 0%, #4f3173 28.53%, #090720 75.52%);
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            scroll-snap-type: y mandatory;
+            overflow-y: scroll;
+        }
+
+        section {
+            width: 100vw;
+            height: 100vh;
+            scroll-snap-align: start;
+
+        &:nth-of-type(1) {
+            background-color: transparent;
+        }
+
+        &:nth-of-type(2) {
+            color: blue;
+        }
+
+        &:nth-of-type(3) { 
+            color: yellow;
+        }
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'SF Pro', sans-serif;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 33px 9%;
+            background: transparent;
+        }
+
+        .logo {
+            width: 50px;
+            height: auto;
+        }
+
+        .navlist {
+            display: flex;
+        }
+
+        .navlist a {
+            color: white;
+            margin-left: 60px;
+            font-size: 15px;
+            font-weight: 600;
+            border-bottom: 2px solid transparent;
+            transition: all .55s ease;
+        }
+        
+        .navlist a:hover {
+            border-bottom: 2px solid white;
+        }
+
+        #menu-icon {
+            color: white;
+             font-size: 35px;
+             z-index: 10001;
+             cursor: pointer;
+             display: none;
+        }
+
+        .hero {
+            height: 100%;
+            width: 100%;
+            min-height: 100vh;
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            gap: 2rem;
+        }
+
+        section .hero {
+            padding: 0 19%;
+        }
+
+        .hero-text h5 {
+            font-size: 14px;
+            font-weight: 400;
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        .hero-text h1 {
+            font-size: 90px;
+            line-height: 1;
+            color: white;
+            margin: 0 0 45px;
+        }
+
+        .hero-text h4 {
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .hero-text p {
+            color: white;
+            font-size: 15px;
+            line-height: 1.9;
+            margin-bottom: 40px;
+        }
+
+        .hero-img img {
+            width: 400px;
+            height: auto;
+        }
+
+        .hero-text a {
+            display: inline-block;
+            color: white;
+            background: #404788;
+            border: 1px solid transparent;
+            padding: 12px 30px;
+            line-height: 1.4;
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: 30px;
+            text-transform: uppercase;
+            transition: all .55s ease;
+        }
+
+        .hero-text a:hover {
+            background: transparent;
+            border: 1px solid white;
+            transform: translateX(8px);
+        }
+
+        .icons {
+            position: relative;
+            top: -50%;
+            padding: 0 9%;
+            transform: translateY(-50%);
+        }
+
+        .icons i {
+            display: block;
+            margin: 26px 0;
+            font-size: 24px;
+            color: white;
+            transition: all .50s ease;
+        }
+
+        .icons i:hover {
+            color: #8364b6;
+            transform: translateY(-5px);
+        }
+
+        #box {
+            width: 928px;
+            height: 500px;
+            position: relative;
+            background-color: rgba(255, 255, 255, 0.05);
+            left: 830px;
+            top: -880px;
+            border-radius: 300px 0px 0px 300px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <section>
+
+            <header>
+                <a href="#" class="logo"><img src="img/placeholder.svg" alt="logo"></a>
+                <ul class="navlist">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Email</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+
+                <div class="bx bx-menu" id="menu-icon"></div>
+            </header>
+            <section class="hero">
+                <div class="hero-text">
+                    <h5>Portfolio</h5>
+                    <h4>Artist, Designer, Architect</h4>
+                    <p></p>
+                    <h1>JAE SUNG PARK</h1>
+                    <p>Explore my work here!</p>
+                    <a href="#">View portfolio</a>
+                </div>
+                <div class="hero-img">
+                    <img src="img/logo.svg" alt="logo">
+                </div>
+            </section>
+            <div class="icons">
+                <a href="#"><i class="ri-instagram-line"></i></a>
+                <a href="#"><i class="ri-mail-line"></i></a>
+                <a href="#"><i class="ri-linkedin-box-line"></i></a>
+            </div>
+            <div id="box">
+            </div>
+    
+        </section>
+
+        <section>
+            <h1>Page Two</h1>
+        </section>
+
+        <section>
+            <h1>Page Three</h1>
+        </section>
+
+    </div>
+</body>
+</html>

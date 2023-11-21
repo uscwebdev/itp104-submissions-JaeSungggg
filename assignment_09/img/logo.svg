@@ -3,7 +3,7 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
+	.st0{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
 </style>
 <circle class="st0" cx="199.5" cy="199.5" r="198"/>
 <path class="st0" d="M84.7,152.6l9.9-23.4l103.6-51c0,0,46.3-20,77.6,20.8s17.5,73.2,17.5,73.2l-6.3,15c0,0,3.3-28.2-16.3-57
