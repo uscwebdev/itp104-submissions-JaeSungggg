@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Jae Park's portfolio showcasing UX design, web development, and a passion for art. Sophomore at USC, majoring in Cognitive Science.">
+
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+      
+    <style>
+        .logo {
+          opacity: 0;
+          transform: translateY(-50px);
+          transition: opacity 1s, transform 1s;
+        }
+  
+        .visible {
+          opacity: 1;
+          transform: translateY(0);
+        }
+
+        .project-img:hover {
+        transform: scale(1.03);
+        transition: transform 0.5s ease-out;
+      }
+      </style>
+
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Portfolio</div>
+      <div>
+        <ul class="navbar">
+          <li><a class="nav" href="#about">About</a></li>
+          <li><a class="nav" href="#experience">Experience</a></li>
+          <li><a class="nav" href="#projects">Projects</a></li>
+          <li><a class="nav" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <section id="profile">
+      <div class="picture">
+        <img src="img/logo.svg" alt="logo">
+      </div>
+      <div class="section-text">
+        <p class="section-text-p1">Hello, I'm</p>
+        <h1 class="title">Jae Sung Park</h1>
+        <p class="section-text-p2">Designer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('img/resume.pdf')">Resume</button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Get In Touch
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section-text-p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="picture">
+          <img src="img/jason.JPG" alt="Profile picture" class="about-pic">
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="img/art.png" alt="Experience icon" class="icon">
+              <h3>Experience</h3>
+              <p>12+ years <br>Art and Design</p>
+            </div>
+            <div class="details-container">
+              <img src="img/book.png" alt="Education icon" class="icon">
+              <h3>Education</h3>
+              <p>Whitney High School (#1 in California)<br>USC Major in Cognitive Science + Minor in Web Development + Minor in User Experience Design</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>I am a sophomore at the University of Southern California majoring in Cognitive Science with minors in Web Development and User Experience Design. My journey began with a childhood passion for art and design, initially leading me towards architecture. However, as I progressed, I discovered my true calling in User Experience Design (UX). The interdisciplinary nature of Cognitive Science has provided me with a holistic understanding of human cognition, while my minors have equipped me with the technical skills needed for digital design.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="experience">
+      <p class="section-text-p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Knowledge</h2>
+            <div class="article-container">
+              <article>
+                <img src="img/verify.png" alt="Experience icon" class="icon">
+                <div>
+                  <h3>HTML</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img src="img/verify.png" alt="Experience icon" class="icon">
+                <div>
+                  <h3>CSS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img src="img/verify.png" alt="Experience icon" class="icon">
+                <div>
+                  <h3>Wireframes</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="img/verify.png" alt="Experience icon" class="icon">
+                <div>
+                  <h3>UI Design</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="img/verify.png" alt="Experience icon" class="icon">
+                <div>
+                  <h3>UX Design</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="img/verify.png" alt="Experience icon" class="icon">
+                <div>
+                  <h3>Fine Art</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">App Experience</h2>
+            <div class="article-container">
+              <article>
+                <img src="img/verify.png" alt="Experience icon" class="icon">
+                <div>
+                  <h3>InDesign</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img src="img/verify.png" alt="Experience icon" class="icon">
+                <div>
+                  <h3>Illustrator</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="img/verify.png" alt="Experience icon" class="icon">
+                <div>
+                  <h3>Photoshop</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="img/verify.png" alt="Experience icon" class="icon">
+                <div>
+                  <h3>Figma</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <p class="section-text-p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+                <a href="project1.html">
+             <img src="img/undesired.png" alt="Project 1" class="project-img">
+                </a>
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+                <a href="project2.html">
+              <img src="img/Architecture.png" alt="Project 2" class="project-img">
+                </a>
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+                <a href="project3.html">
+              <img src="img/fish.png" alt="Project 3" class="project-img">
+                </a>
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section-text-p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="img/mail.png" alt="Email icon" class="icon contact-icon email-icon">
+          <p><a class="nav" href="mailto:jpark196@usc.edu">jpark196@usc.edu</a></p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+        function animateOnLoad() {
+          var portfolioElement = document.querySelector(".logo");
+          portfolioElement.classList.add("visible");
+        }
+  
+        window.addEventListener("load", animateOnLoad);
+      </script>
+
+  </body>
+</html>
